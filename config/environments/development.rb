@@ -14,7 +14,7 @@ Rails.application.configure do
     port:                 587,
     domain:               'afternoon-reaches-27804-c6d42e81c9f6.herokuapp.com',
     user_name:            'ilravgaz02@gmail.com',
-    password:             'gkmf keed tzzo whyt',
+    password:             'gkmfkeedtzzowhyt',
     authentication:       'plain',
     enable_starttls_auto: true,
     open_timeout:         5,
