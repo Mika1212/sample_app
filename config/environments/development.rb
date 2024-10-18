@@ -5,9 +5,20 @@ Rails.application.configure do
 
   config.action_mailer.raise_delivery_errors = false
 
-  host = 'localhost:3000' # Don't use this literally; use your local dev host instead
+  host = 'localhost:3000' # use your local dev host
   # Use this if developing on localhost.
   config.action_mailer.default_url_options = { host: host, protocol: 'http' }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address:              'smtp.gmail.com',
+    port:                 587,
+    domain:               'afternoon-reaches-27804-c6d42e81c9f6.herokuapp.com',
+    user_name:            'ilravgaz02@gmail.com',
+    password:             'gkmf keed tzzo whyt',
+    authentication:       'plain',
+    enable_starttls_auto: true,
+    open_timeout:         5,
+    read_timeout:         5 }
 
   # In the development environment your application's code is reloaded any time
   # it changes. This slows down response time but is perfect for development
