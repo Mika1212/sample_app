@@ -6,8 +6,10 @@ Rails.application.configure do
   # Code is not reloaded between requests.
   config.cache_classes = true
 
+  host = 'afternoon-reaches-27804-c6d42e81c9f6.herokuapp.com'
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
+    host: 'afternoon-reaches-27804-c6d42e81c9f6.herokuapp.com',
     address:              'smtp.gmail.com',
     port:                 587,
     domain:               'afternoon-reaches-27804-c6d42e81c9f6.herokuapp.com',
