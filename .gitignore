@@ -5,7 +5,9 @@
 #   git config --global core.excludesfile '~/.gitignore_global'
 # Ignore db test files.
 db/test.*
-config/environments/*.rb
+
+#config/environments/*.rb
+
 # Ignore bundler config.
 /.bundle
 
